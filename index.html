@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXORA - Online Shopping Store</title>
+<link rel="stylesheet" href="style.css">
+
+<div class="ticker"><div class="ticker-track">
+  <span class="tick-item">🔥 <b>FLASH SALE LIVE</b> — up to 50% OFF on Electronics</span><span class="tick-item">🚚 Free delivery on orders over PKR 3,000</span><span class="tick-item">💳 Cash on Delivery — all over Pakistan</span><span class="tick-item">🔄 7-day easy returns, no questions asked</span><span class="tick-item">⭐ Rated 4.8/5 by 15,000+ happy customers</span><span class="tick-item">🎟️ Use code <b>WELCOME10</b> for 10% OFF your first order</span>
+  <span class="tick-item">🔥 <b>FLASH SALE LIVE</b> — up to 50% OFF on Electronics</span><span class="tick-item">🚚 Free delivery on orders over PKR 3,000</span><span class="tick-item">💳 Cash on Delivery — all over Pakistan</span><span class="tick-item">🔄 7-day easy returns, no questions asked</span><span class="tick-item">⭐ Rated 4.8/5 by 15,000+ happy customers</span><span class="tick-item">🎟️ Use code <b>WELCOME10</b> for 10% OFF your first order</span>
+</div></div>
+<body>
+<div class="topbar"><div class="container topbar-inner">
+  <span>🚚 Free delivery on orders over PKR 3,000</span>
+  <div class="topbar-links" id="topbarLinks"></div>
+</div></div>
+<header class="main-header">
+  <div class="container header-inner">
+    <a href="#/" class="logo">NEX<span>ORA</span></a>
+    <div class="search-bar"><input id="navSearch" placeholder="Search for products, brands and more..."><button onclick="doSearch()">Search</button></div>
+    <button class="hamburger" onclick="document.getElementById('catNav').classList.toggle('open')">☰</button>
+    <div class="header-actions">
+      <button class="h-action" onclick="location.hash='#/wishlist'">♡<span>Wishlist</span><b class="badge" id="wishBadge" style="display:none"></b></button>
+      <button class="h-action" onclick="location.hash='#/cart'">🛒<span>Cart</span><b class="badge" id="cartBadge" style="display:none"></b></button>
+    </div>
+  </div>
+  <nav class="cat-nav" id="catNav"><div class="container cat-nav-inner" id="catNavInner"></div></nav>
+</header>
+<main id="app" style="min-height:60vh"></main>
+<footer><div class="container">
+  <div class="footer-grid">
+    <div><h3 class="logo" style="color:#fff">NEX<span>ORA</span></h3><p>Pakistan's trusted online store. Quality products, fast nationwide delivery and secure payments.</p></div>
+    <div><h4>Shop</h4><a href="#/shop">All Products</a><a href="#/shop?cat=1">Electronics</a><a href="#/shop?cat=2">Fashion</a><a href="#/shop?cat=3">Home &amp; Living</a></div>
+    <div><h4>My Account</h4><a href="#/account">My Orders</a><a href="#/wishlist">Wishlist</a><a href="#/cart">Shopping Cart</a></div>
+    <div><h4>Customer Care</h4><a href="#/">Help Center</a><a href="#/">Returns &amp; Refunds</a><a href="#/">021-111-111-111</a></div>
+    <div><h4>Staff</h4><a href="#/admin">⚙️ Admin Login</a><a href="#/login">Staff Login</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 NEXORA. All rights reserved. | Cash on Delivery — JazzCash — EasyPaisa — Cards</div>
+</div></footer>
+<div id="modalRoot"></div>
+<div id="printReport" style="display:none"></div>
+<div id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
